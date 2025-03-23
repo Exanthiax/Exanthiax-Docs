@@ -10,3 +10,13 @@
 * [Commands & Permissions](configuration/commands-and-permissions.md)
 * [PlaceholderAPI](configuration/placeholderapi.md)
 * [API](configuration/api.md)
+
+## The Effects System
+
+* [Effects](the-effects-system/effects/README.md)
+  * [battlepass\_task\_xp\_multiplier](the-effects-system/effects/battlepass_task_xp_multiplier.md)
+  * [battlepass\_xp\_multiplier](the-effects-system/effects/battlepass_xp_multiplier.md)
+  * [give\_battlepass\_task\_xp](the-effects-system/effects/give_battlepass_task_xp.md)
+  * [give\_battlepass\_tier](the-effects-system/effects/give_battlepass_tier.md)
+  * [give\_battlepass\_xp](the-effects-system/effects/give_battlepass_xp.md)
+  * [set\_battlepass\_tier](the-effects-system/effects/set_battlepass_tier.md)
