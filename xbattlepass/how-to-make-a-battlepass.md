@@ -16,17 +16,17 @@ battlepass:
 
 tiers:
   - tier: 1
-    rewards: # The ID of the reward
+    rewards:
       - id: diamond_block
-        tier: free # The tier the reward is in (free/premium/both)
+        tier: free
       - id: money_1000
         tier: premium
   - tier: 5
-    rewards: # The ID of the reward
+    rewards:
       - id: money_5000
         tier: free
   - tier: 15
-    rewards: # The ID of the reward
+    rewards:
       - id: skeleton_spawner
         tier: premium
 ```
@@ -37,7 +37,8 @@ tiers:
 ```yml
 battlepass:
   # The formula to calculate the XP needed to reach the next tier.
-  xp-formula: 1.5 * %level% + 5
+  # You can use %level% here to create xp scaling.
+  xp-formula: '1.5 * %level% + 5'
   
   # The maximum tier of the BattlePass.
   max-tier: 100
@@ -46,7 +47,7 @@ battlepass:
   command: 'battlepass'
   
   # The date and time the BattlePass starts. Format: YYYY-MM-DD HH:MM
-  # This uses the server time, you cannot specify a timezone.
+  # This uses the server time
   battlepass-start: 2025-01-01 00:00
 ```
 
@@ -67,3 +68,8 @@ tiers:
         tier: premium
 ```
 
+## Internal Placeholders
+
+| Placeholder | Value                                             |
+| ----------- | ------------------------------------------------- |
+| `%level%`   | The battlepass tier/level. Useful for XP scaling. |
