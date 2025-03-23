@@ -1,5 +1,4 @@
 ---
-icon: hand-wave
 cover: https://gitbookio.github.io/onboarding-template-images/header.png
 coverY: 0
 layout:
@@ -18,12 +17,27 @@ layout:
     visible: true
 ---
 
-# Welcome
+# xBattlepass
 
-Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
+#### **What is xBattlepass?**
 
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+xBattlepass is a fully customisable, feature-packed Battlepass plugin. It includes Daily, Weekly, and Monthly quests, along with infinite tiers and both Free and Premium rewards.
 
-### Jump right in
+#### **What makes xBattlepass different?**
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Getting Started</strong></td><td>Create your first site</td><td></td><td></td><td><a href="xbattlepass/quickstart.md">quickstart.md</a></td></tr><tr><td><strong>Basics</strong></td><td>Learn the basics of GitBook</td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
+xBattlepass, powered by libreforge, is the pinnacle of customisation for Battlepass plugins. It offers much more than just distributing items, currency, XP, and permissions. With xBattlepass, players can receive powerful effects such as enchanting hand items, applying XP boosts, granting potion effects, filling hunger bars, doubling health, and more.
+
+Take full control of the player experience with fully customisable GUIs, endless rewards, infinite tiers, and seamless integration with external plugins.
+
+#### How do I install xBattlepass?
+
+Installing xBattlepass is a breeze.\
+Firstly, you need to install the dependency, eco. You can get eco from [GitHub](https://github.com/Auxilor/eco/releases) or [Polymart](https://polymart.org/resource/1-16-1-17-eco.773).\
+To learn what eco is, you can read it on [Auxilor's Wiki](https://plugins.auxilor.io/all-plugins/what-is-eco).\
+Once you've got eco, all you need to do is drop the xBattlepass plugin jar into your `/plugins` folder.
+
+#### The Effects System
+
+Featuring over 200 effects, 100 conditions, and 100 triggers, the Effects System allows you to create endless configurations, all powered by Auxilor's libreforge. You don’t need to download libreforge separately—it’s included with xBattlepass, along with Auxilor's other plugins.
+
+xBattlepass integrates seamlessly with the Effects System, offering new effects, triggers, and conditions to craft a truly unique server experience. Combined with Auxilor's plugins like EcoSkills, EcoEnchants, and more, you have the tools to tailor your players' experience exactly how you envision it. You could create custom enchantments that boost BattlePass XP gain using EcoEnchants, for example.

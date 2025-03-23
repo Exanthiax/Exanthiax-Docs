@@ -1,13 +1,12 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [xBattlepass](README.md)
 
-## xBattlepass
+## Configuration
 
-* [xBattlepass](xbattlepass/xbattlepass.md)
-* [How to make a BattlePass](xbattlepass/how-to-make-a-battlepass.md)
-* [How to make a Reward](xbattlepass/how-to-make-a-reward.md)
-* [How to make a BattleQuest](xbattlepass/how-to-make-a-battlequest.md)
-* [Commands & Permissions](xbattlepass/commands-and-permissions.md)
-* [PlaceholderAPI](xbattlepass/placeholderapi.md)
-* [API](xbattlepass/api.md)
+* [How to make a BattlePass](configuration/how-to-make-a-battlepass.md)
+* [How to make a Reward](configuration/how-to-make-a-reward.md)
+* [How to make a BattleQuest](configuration/how-to-make-a-battlequest.md)
+* [Commands & Permissions](configuration/commands-and-permissions.md)
+* [PlaceholderAPI](configuration/placeholderapi.md)
+* [API](configuration/api.md)
