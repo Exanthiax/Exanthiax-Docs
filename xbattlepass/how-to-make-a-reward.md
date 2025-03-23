@@ -11,7 +11,7 @@ Each skill is its own config file, placed in the `/rewards/` folder, and you can
 The ID of the Reward is the file name. This is what you use in your`battlepass.yml`
 ID's must be lowercase letters, numbers, and underscores only.
 
-## Example BattlePass Config
+## Example Reward Config
 
 ```yaml
 display:
