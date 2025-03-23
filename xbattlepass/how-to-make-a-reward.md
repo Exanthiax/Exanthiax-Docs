@@ -80,7 +80,7 @@ effects:
   - id: run_command
     args:
       command: '/envoy flare default %player% 2'
-    - ```
+```
 This example runs a command from an external plugin, in this case, giving the player 2 Envoy Flares from AxEnvoy.
 
 ```yaml
