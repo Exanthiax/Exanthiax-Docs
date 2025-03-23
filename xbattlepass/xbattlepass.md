@@ -1,5 +1,4 @@
 # xBattlepass
-
 ### **What is xBattlepass?**
 
 xBattlepass is a fully customizable, feature-packed Battlepass plugin. It includes Daily, Weekly, and Monthly quests, along with infinite tiers and both Free and Premium rewards.
