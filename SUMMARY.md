@@ -6,7 +6,10 @@
 
 * [How to make a BattlePass](configuration/how-to-make-a-battlepass.md)
 * [How to make a Reward](configuration/how-to-make-a-reward.md)
-* [How to make a BattleQuest](configuration/how-to-make-a-battlequest.md)
+* [How to make a BattleQuest](configuration/how-to-make-a-battlequest/README.md)
+  * [Configuring a Task](configuration/how-to-make-a-battlequest/configuring-a-task.md)
+  * [Configuring a Quest](configuration/how-to-make-a-battlequest/configuring-a-quest.md)
+  * [Configuring a Category](configuration/how-to-make-a-battlequest/configuring-a-category.md)
 
 ## The Effects System
 
