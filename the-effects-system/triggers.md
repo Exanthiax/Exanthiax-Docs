@@ -2,8 +2,9 @@
 
 ## xBattlepass Triggers
 
-| ID                       | Description                                                           | Value Provided        |
-| ------------------------ | --------------------------------------------------------------------- | --------------------- |
-| \`gain\_battlepass\_xp\` | Triggered when gaining skill experience points **Requires EcoSkills** | The experience gained |
-| `level_up_skill`         | Triggered when levelling up **Requires EcoSkills**                    | The new level         |
-| `regen_magic`            | Triggered when regenerating magic **Requires EcoSkills**              | 1                     |
+| ID                         | Description                                         | Value Provided        |
+| -------------------------- | --------------------------------------------------- | --------------------- |
+| `gain_battlepass_xp`       | Triggered when gaining battlepass experience points | The experience gained |
+| `tier_up_battlepass`       | Triggered when tiering up the battlepass            | The new level         |
+| `complete_battlepass_task` | Triggered when completing a battlepass task         | 1                     |
+| `claim_battlepass_reward`  | Triggered when claiming a battlepass reward         | 1                     |
