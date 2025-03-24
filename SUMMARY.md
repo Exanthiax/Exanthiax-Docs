@@ -23,3 +23,6 @@
   * [give\_battlepass\_tier](the-effects-system/effects/give_battlepass_tier.md)
   * [give\_battlepass\_xp](the-effects-system/effects/give_battlepass_xp.md)
   * [set\_battlepass\_tier](the-effects-system/effects/set_battlepass_tier.md)
+* [Filters](the-effects-system/filters/README.md)
+  * [battlepass\_reward](the-effects-system/filters/battlepass_reward.md)
+  * [battlepass\_task](the-effects-system/filters/battlepass_task.md)
