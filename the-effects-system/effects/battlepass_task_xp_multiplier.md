@@ -14,7 +14,8 @@ layout:
 
 # battlepass\_task\_xp\_multiplier
 
-## `` `battlepass_task_xp_multiplier` ``
-
-
-
+{% code fullWidth="false" %}
+```yaml
+battlepass_task_xp_multiplier
+```
+{% endcode %}
