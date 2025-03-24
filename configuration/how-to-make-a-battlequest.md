@@ -9,14 +9,26 @@ BattleQuests are formed of three components: the task, the quest, and the catego
 
 {% stepper %}
 {% step %}
-### \[Configure a Task]\(
+### Configure a Task
+
+{% embed url="https://exanthiax.gitbook.io/xbattlepass/configuration/how-to-make-a-battlequest/configuring-a-task" %}
+
+
 {% endstep %}
 
 {% step %}
 ### Configure a Quest
+
+{% embed url="https://exanthiax.gitbook.io/xbattlepass/configuration/how-to-make-a-battlequest/configuring-a-quest" %}
+
+
 {% endstep %}
 
 {% step %}
 ### Configure a Category
+
+{% embed url="https://exanthiax.gitbook.io/xbattlepass/configuration/how-to-make-a-battlequest/configuring-a-category" %}
+
+
 {% endstep %}
 {% endstepper %}
