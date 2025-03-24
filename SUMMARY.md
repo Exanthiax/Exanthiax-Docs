@@ -13,6 +13,9 @@
 
 ## The Effects System
 
+* [Conditions](the-effects-system/conditions/README.md)
+  * [has\_premium\_battlepass](the-effects-system/conditions/has_premium_battlepass.md)
+  * [has\_battlepass\_tier](the-effects-system/conditions/has_battlepass_tier.md)
 * [Effects](the-effects-system/effects/README.md)
   * [battlepass\_task\_xp\_multiplier](the-effects-system/effects/battlepass_task_xp_multiplier.md)
   * [battlepass\_xp\_multiplier](the-effects-system/effects/battlepass_xp_multiplier.md)
