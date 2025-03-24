@@ -1,21 +1,14 @@
----
-layout:
-  title:
-    visible: false
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # battlepass\_task\_xp\_multiplier
 
-{% code fullWidth="false" %}
+**Permanent Effect**
+
+Multiplies Battlepass Task XP gain
+
+## Example Config
+
 ```yaml
-battlepass_task_xp_multiplier
+- id: battlepass_task_xp_multiplier
+  args:
+    multiplier: 2 # The multiplier for battlepass task xp gain
 ```
-{% endcode %}
+
