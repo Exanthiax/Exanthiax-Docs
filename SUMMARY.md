@@ -14,7 +14,7 @@
 ## The Effects System
 
 * [Effects](the-effects-system/effects/README.md)
-  * [battlepass\_task\_xp\_multiplier](the-effects-system/effects/battlepass_task_xp_multiplier.md)
+  * [\`battlepass\_task\_xp\_multiplier\`](the-effects-system/effects/battlepass_task_xp_multiplier.md)
   * [battlepass\_xp\_multiplier](the-effects-system/effects/battlepass_xp_multiplier.md)
   * [give\_battlepass\_task\_xp](the-effects-system/effects/give_battlepass_task_xp.md)
   * [give\_battlepass\_tier](the-effects-system/effects/give_battlepass_tier.md)
