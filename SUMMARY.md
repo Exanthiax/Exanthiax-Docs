@@ -7,9 +7,6 @@
 * [How to make a BattlePass](configuration/how-to-make-a-battlepass.md)
 * [How to make a Reward](configuration/how-to-make-a-reward.md)
 * [How to make a BattleQuest](configuration/how-to-make-a-battlequest.md)
-* [Commands & Permissions](configuration/commands-and-permissions.md)
-* [PlaceholderAPI](configuration/placeholderapi.md)
-* [API](configuration/api.md)
 
 ## The Effects System
 
@@ -27,3 +24,9 @@
   * [battlepass\_reward](the-effects-system/filters/battlepass_reward.md)
   * [battlepass\_task](the-effects-system/filters/battlepass_task.md)
 * [Triggers](the-effects-system/triggers.md)
+
+## Useful
+
+* [Commands & Permissions](useful/commands-and-permissions.md)
+* [PlaceholderAPI](useful/placeholderapi.md)
+* [API](useful/api.md)
