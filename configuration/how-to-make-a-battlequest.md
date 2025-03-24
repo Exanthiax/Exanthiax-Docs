@@ -9,20 +9,14 @@ BattleQuests are formed of three components: the task, the quest, and the catego
 
 {% stepper %}
 {% step %}
-### Configure a Task
-
-
+### \[Configure a Task]\(
 {% endstep %}
 
 {% step %}
 ### Configure a Quest
-
-
 {% endstep %}
 
 {% step %}
 ### Configure a Category
-
-
 {% endstep %}
 {% endstepper %}
