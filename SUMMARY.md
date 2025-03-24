@@ -26,3 +26,4 @@
 * [Filters](the-effects-system/filters/README.md)
   * [battlepass\_reward](the-effects-system/filters/battlepass_reward.md)
   * [battlepass\_task](the-effects-system/filters/battlepass_task.md)
+* [Triggers](the-effects-system/triggers.md)
