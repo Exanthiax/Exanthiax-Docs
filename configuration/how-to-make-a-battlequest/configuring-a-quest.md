@@ -60,11 +60,11 @@ battlepass-tier: premium
 #### The Tasks Section
 
 ```yaml
+# The list of Task ID(s) to be completed.
+# The order of this list is what determines the order in the Quest lore.
 tasks:
-    # Here goes the ID(s) of the Task(s) to be completed.
   - id: chickens
-    # The task XP required. 
-    xp: 100
+    xp: 100 # The task XP required. 
 
 # The amount of Tasks from the list required to be completed.
 # Used if you want players to complete 2/3 options.

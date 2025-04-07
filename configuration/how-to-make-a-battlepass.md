@@ -1,54 +1,68 @@
-# How to make a BattlePass
+# How to make a Battlepass
 
-The `battlepass.yml` is the key to your BattlePass. This is where you define how much XP is needed per-tier, how many tiers are in the BattlePass, and what rewards the player receives.
+The battlepass configs are the star of the show. This is where you define how much XP is needed per-tier, how many tiers are in the battlepass, and what rewards the player receives.
+
+xBattlepass gives you the freedom to create multiple battlepasses, each with its own Quests, Tasks, Tiers, Rewards and commands. This allows you to create a different battlepass for an event, whilst running simultaneously with your main, seasonal pass.
 
 ## Default configs
 The default configs can be found here
 
+## How to add battlepasses
+
+Each battlepass is its own config file, placed in the `/battlepasses/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+
+The ID of the Battlepass is the file name. This is what you would use in your category configs and effects.
+ID's must be lowercase letters, numbers, and underscores only.
 ## Example BattlePass Config
 
 ```yaml
-battlepass:
-  xp-formula: 1.5 * %level% + 5
-  max-tier: 100
-  command: 'battlepass'
-  battlepass-start: 2025-01-01 00:00
+name: "&6Example Battlepass"  
+  
+battlepass:  
+  xp-formula: 1.5 * %level% + 5
+  max-tier: 100
+  command: 'battlepass'
+  premium-permission: "example.pass.premium"  
+  battlepass-start: 2025-01-01 00:00
+  battlepass-end: 2025-05-01 00:00
 
-tiers:
-  - tier: 1
-    rewards:
-      - id: diamond_block
-        tier: free
-      - id: money_1000
-        tier: premium
-  - tier: 5
-    rewards:
-      - id: money_5000
-        tier: free
-  - tier: 15
-    rewards:
-      - id: skeleton_spawner
-        tier: premium
+tiers:  
+  - tier: 1 
+    rewards:  
+      - id: coins_5000
+        tier: free
+      - id: coins_10000
+        tier: premium
+      - id: golden_apple_3  
+        tier: premium
 ```
 
 ## Understanding the Sections
 
 #### The BattlePass Configuration
 ```yml
+name: "&6Example Battlepass" # The name of the battlepass, to dsiplay in GUIs.
 battlepass:
   # The formula to calculate the XP needed to reach the next tier.
   # You can use %level% here to create xp scaling.
-  xp-formula: '1.5 * %level% + 5'
+  xp-formula: "1.5 * %level% + 5"
   
   # The maximum tier of the BattlePass.
   max-tier: 100
   
   # The command used to open the BattlePass GUI.
-  command: 'battlepass'
-  
+  command: "battlepass"
+
+  # The permission required for the premium pass
+  premium-permission: "example.pass.premium"
+
   # The date and time the BattlePass starts. Format: YYYY-MM-DD HH:MM
-  # This uses the server time
+  # This uses the server time.
   battlepass-start: 2025-01-01 00:00
+  
+  # The date the battle pass ends. Format: YYYY-MM-DD HH:MM
+  # This uses the server time.
+  battlepass-end: 2025-05-01 00:00
 ```
 
 #### The Reward Tiers

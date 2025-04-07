@@ -1,6 +1,6 @@
 # How to make a Reward
 
-Rewards are what the players earn for tiering up the BattlePass. Without rewards, what would be the point? Thanks to libreforge, rewards don't have to just be some XP, some currency, an item. They can be Potion Effects, stat multipliers, and much more. Rewards are really easy to setup, and they are totally reusable.
+Rewards are what the players earn for tiering up the battlepass. Without rewards, what would be the point? Thanks to libreforge, rewards don't have to just be some XP, some currency, an item. They can be Potion Effects, stat multipliers, and much more. Rewards are really easy to setup, and they are totally reusable.
 
 ## Default configs
 The default configs can be found here.
@@ -8,7 +8,7 @@ The default configs can be found here.
 ## How to add rewards
 Each skill is its own config file, placed in the `/rewards/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-The ID of the Reward is the file name. This is what you use in your`battlepass.yml`
+The ID of the Reward is the file name. This is what you use in your battlepass configs, and effect filters.
 ID's must be lowercase letters, numbers, and underscores only.
 
 ## Example Reward Config

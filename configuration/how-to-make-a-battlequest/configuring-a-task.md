@@ -40,14 +40,6 @@ display:
     - "&7Kill chickens"
     - "&7%current%/%required%"
 ```
-
-#### Internal Placeholders
-
-| Placeholder  | Value                 |
-| ------------ | --------------------- |
-| `%current%`  | The current task xp.  |
-| `%required%` | The required task xp. |
-
 #### The XP Gain Methods
 
 ```yaml
@@ -63,3 +55,10 @@ xp-gain-methods:
 ```
 
 Read [here](https://plugins.auxilor.io/effects/all-triggers) for the triggers.
+
+#### Internal Placeholders
+
+| Placeholder  | Value                 |
+| ------------ | --------------------- |
+| `%current%`  | The current task xp.  |
+| `%required%` | The required task xp. |
