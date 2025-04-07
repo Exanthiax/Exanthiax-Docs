@@ -25,9 +25,7 @@ xBattlepass is a fully customizable and feature-rich Battle Pass plugin designed
 
 With xBattlepass, you can create multiple battle passes, each with unique quests, rewards, and premium permissions—ideal for seasonal events, limited-time challenges, or distinct progression paths.
 
-
-
-Key Features:
+#### **Key Features:**
 
 • Extensive Effects System
 
