@@ -1,7 +1,7 @@
 # Commands & Permissions
 
 ### Premium Battlepass
-To set the permission required for the Premium Battlepass, edit this in config.yml
+To set the permission required for the Premium Battlepass, edit this in your battlepass configs.
 
 ### XP multiplier permission
 
@@ -16,38 +16,40 @@ Permission: `xbattlepass.xpmultiplier.quadruple`
 
 General Usage: `xbattlepass.xpmultiplier.50percent` would give 50% more skill XP (1.5x)
 
-## `/battlepass`
+## `Open Battlepass GUI (eg: /Battlepass)`
 
-This is the command to open the main Battlepass GUI
-Usage: `/battlepass`
-Permission: `xbattlepass.command.xbattlepass`
+This is the command to open the Battlepass GUI
+Usage: `/battlepass, /eventpass, etc.`
+Permission: `xbattlepass.command.<command>
 
-## `/battlepass give`
+Eg. A battlepass with the command `/eventpass` would be `xbattlepass.command.eventpass`
+
+## `/xbattlepass give`
 
 The command to give battlepass XP
-Usage: `/battlepass give <player> <xp-amount>`
+Usage: `/xbattlepass give <player> <battlepass_id> <xp-amount>`
 Permission: `xbattlepass.command.give`
 
-## `/battlepass reload`
+## `/xbattlepass reload`
 
 The command to reload the plugin and configs
-Usage: `/battlepass reload`
+Usage: `/xbattlepass reload`
 Permission: `xbattlepass.command.reload`
 
-## `/battlepass reset`
+## `/xbattlepass reset`
 
-The command to give battlepass XP
-Usage: `/battlepass reset <player>`
+The command to reset battlepass XP
+Usage: `/xbattlepass reset <player> <battlepass_id>`
 Permission: `xbattlepass.command.reset`
 
-## `/battlepass tier`
+## `/xbattlepass tier`
 
 The command to open the Battlepass tiers GUI
-Usage: `/battlepass tier`
+Usage: `/xbattlepass tier <battlepass_id>`
 Permission: `xbattlepass.command.tier`
 
-## `/battlepass quests`
+## `/xbattlepass quests`
 
 The command to open the Battlepass quests GUI
-Usage: `/battlepass tier`
+Usage: `/battlepass quests <battlepass_id>`
 Permission: `xbattlepass.command.quests`
