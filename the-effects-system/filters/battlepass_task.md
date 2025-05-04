@@ -6,6 +6,6 @@ The list of battlepass tasks the effect should activate on
 
 ```yaml
 filters:
-  battlepass_reward: 
+  battlepass_task: 
     - collect_eggs
 ```
