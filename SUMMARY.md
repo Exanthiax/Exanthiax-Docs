@@ -43,7 +43,7 @@
 
 ## Changelogs
 
-* [Versions](changelogs/versions/README.md)
+* [🐛 Versions](changelogs/versions/README.md)
   * [1.0.1](changelogs/versions/1.0.1.md)
   * [1.0.2](changelogs/versions/1.0.2.md)
   * [1.0.3](changelogs/versions/1.0.3.md)
