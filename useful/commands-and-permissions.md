@@ -2,10 +2,10 @@
 description: List of Commands and Permissions
 ---
 
-# Commands & Permissions
+# 💼 Commands & Permissions
 
 {% tabs %}
-{% tab title="💼 Permissions" %}
+{% tab title="Permissions" %}
 ### Premium Battlepass
 
 To set the permission required for the Premium Battlepass, edit this in your battlepass configs.
@@ -21,7 +21,7 @@ Permission: `xbattlepass.xpmultiplier.50percent Permission:` xbattlepass.xpmulti
 General Usage: `xbattlepass.xpmultiplier.50percent` would give 50% more skill XP (1.5x)
 {% endtab %}
 
-{% tab title="✍🏻 Commands" %}
+{% tab title="Commands" %}
 ## `Open Battlepass GUI (eg: /Battlepass)`
 
 This is the command to open the Battlepass GUI\

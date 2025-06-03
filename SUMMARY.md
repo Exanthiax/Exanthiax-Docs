@@ -36,17 +36,17 @@
 
 ## Useful
 
-* [Commands & Permissions](useful/commands-and-permissions.md)
-* [Internal Placeholders](useful/internal-placeholders.md)
-* [PlaceholderAPI](useful/placeholderapi.md)
-* [API](useful/api.md)
+* [💼 Commands & Permissions](useful/commands-and-permissions.md)
+* [🎯 Internal Placeholders](useful/internal-placeholders.md)
+* [🎯 PlaceholderAPI](useful/placeholderapi.md)
+* [💻 API](useful/api.md)
 
 ## Changelogs
 
 * [🐛 Versions](changelogs/versions/README.md)
-  * [1.0.1](changelogs/versions/1.0.1.md)
-  * [1.0.2](changelogs/versions/1.0.2.md)
-  * [1.0.3](changelogs/versions/1.0.3.md)
-  * [1.0.4](changelogs/versions/1.0.4.md)
-  * [1.0.5](changelogs/versions/1.0.5.md)
-  * [1.1.0](changelogs/versions/1.1.0.md)
+  * [📋 1.0.1](changelogs/versions/1.0.1.md)
+  * [📋 1.0.2](changelogs/versions/1.0.2.md)
+  * [📋 1.0.3](changelogs/versions/1.0.3.md)
+  * [📋 1.0.4](changelogs/versions/1.0.4.md)
+  * [📋 1.0.5](changelogs/versions/1.0.5.md)
+  * [📋 1.1.0](changelogs/versions/1.1.0.md)
