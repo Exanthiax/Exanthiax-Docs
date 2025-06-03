@@ -42,3 +42,5 @@ Create fully custom menus with support for custom items from ItemsAdder, Oraxen,
 • Simple Installation
 
 Requires the eco library. Just drop xBattlepass into your /plugins folder and start configuring.\
+
+$All information on this wiki is based on the latest released version of xBattlepass$
