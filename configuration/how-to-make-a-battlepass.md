@@ -1,18 +1,20 @@
-# How to make a Battlepass
+# How to make a BattlePass
 
 The battlepass configs are the star of the show. This is where you define how much XP is needed per-tier, how many tiers are in the battlepass, and what rewards the player receives.
 
 xBattlepass gives you the freedom to create multiple battlepasses, each with its own Quests, Tasks, Tiers, Rewards and commands. This allows you to create a different battlepass for an event, whilst running simultaneously with your main, seasonal pass.
 
 ## Default configs
+
 The default configs can be found here
 
 ## How to add battlepasses
 
 Each battlepass is its own config file, placed in the `/battlepasses/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-The ID of the Battlepass is the file name. This is what you would use in your category configs and effects.
+The ID of the Battlepass is the file name. This is what you would use in your category configs and effects.\
 ID's must be lowercase letters, numbers, and underscores only.
+
 ## Example BattlePass Config
 
 ```yaml
@@ -40,6 +42,7 @@ tiers:
 ## Understanding the Sections
 
 #### The BattlePass Configuration
+
 ```yml
 name: "&6Example Battlepass" # The name of the battlepass, to dsiplay in GUIs.
 battlepass:
@@ -66,6 +69,7 @@ battlepass:
 ```
 
 #### The Reward Tiers
+
 ```yaml
 tiers:
 	# The tier number for the reward(s).
@@ -84,6 +88,7 @@ tiers:
 
 ## Internal Placeholders
 
-| Placeholder | Value                                             |
-| ----------- | ------------------------------------------------- |
-| `%level%`   | The battlepass tier/level. Useful for XP scaling. |
+| Placeholder       | Value                                             |
+| ----------------- | ------------------------------------------------- |
+| `%level%`         | The battlepass tier/level. Useful for XP scaling. |
+| `%level_numeral%` | The battlepass tier/level, in numerals            |

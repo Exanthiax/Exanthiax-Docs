@@ -11,6 +11,12 @@
   * [Configuring a Quest](configuration/how-to-make-a-battlequest/configuring-a-quest.md)
   * [Configuring a Category](configuration/how-to-make-a-battlequest/configuring-a-category.md)
 
+***
+
+* [Default Configs](default-configs/README.md)
+  * [config.yml](default-configs/config.yml.md)
+  * [lang.yml](default-configs/lang.yml.md)
+
 ## The Effects System
 
 * [Conditions](the-effects-system/conditions/README.md)
@@ -31,6 +37,7 @@
 ## Useful
 
 * [Commands & Permissions](useful/commands-and-permissions.md)
+* [Internal Placeholders](useful/internal-placeholders.md)
 * [PlaceholderAPI](useful/placeholderapi.md)
 * [API](useful/api.md)
 

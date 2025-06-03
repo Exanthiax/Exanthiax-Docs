@@ -18,7 +18,7 @@ display:
   display-name: Chickens
   lore:
     - "&7Kill chickens"
-    - "&7%current%/%required%"
+    - "&7%current_task_xp%/%required_task_xp%"
 
 xp-gain-methods:
   - trigger: kill
@@ -38,8 +38,9 @@ display:
   display-name: Chickens
   lore:
     - "&7Kill chickens"
-    - "&7%current%/%required%"
+    - "&7%current_task_xp%/%required_task_xp%"
 ```
+
 #### The XP Gain Methods
 
 ```yaml
@@ -58,7 +59,7 @@ Read [here](https://plugins.auxilor.io/effects/all-triggers) for the triggers.
 
 #### Internal Placeholders
 
-| Placeholder  | Value                 |
-| ------------ | --------------------- |
-| `%current%`  | The current task xp.  |
-| `%required%` | The required task xp. |
+| Placeholder          | Value                 | Options                     |
+| -------------------- | --------------------- | --------------------------- |
+| `%current_task_xp%`  | The current task xp.  | add `_formatted` for commas |
+| `%required_task_xp%` | The required task xp. | add `_formatted` for commas |

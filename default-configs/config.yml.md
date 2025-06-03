@@ -1,0 +1,311 @@
+---
+description: Default config.yml
+---
+
+# config.yml
+
+```yaml
+#
+# xBattlepass Configuration
+# by Exanthiax, _OfTeN_, Auxilor
+#
+
+# The amount of time (in milliseconds) that the GUI icons should be cached for
+# Prevents spamming the GUI to cause lag
+gui-cache-ttl: 1000
+
+# GUI Configuration for the Battlepass GUI (/battlepass)
+battlepass-gui:
+  title: "xBattlepass"
+  mask:
+    # The way the mask works is by having a list of materials
+    # And then a pattern to use those materials.
+
+    # The pattern is the rows in the GUI
+    # Each line must be 9 long, and the amount of rows should be the amount of rows in the GUI
+    # A zero represents nothing
+    # A 1 represents the first material
+    # A 2 represents the second material
+    # And so on, you can add up to 9.
+    materials:
+      - black_stained_glass_pane
+    pattern:
+      - "111111111"
+      - "111010111"
+      - "111111111"
+  buttons:
+    tiers:
+      item: lime_stained_glass_pane
+      name: "&aTiers"
+      lore:
+        - ""
+        - "&aLeft click &7to see"
+        - "&7your battlepass progression"
+        - "&7and claim rewards"
+        - ""
+      location:
+        row: 2
+        column: 4
+    quests:
+      item: orange_stained_glass_pane
+      name: "&6Quests"
+      lore:
+        - ""
+        - "&6Left click &7to see"
+        - "&7all available quests"
+        - "&7and your progression"
+        - ""
+      location:
+        row: 2
+        column: 6
+
+    # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
+    custom-slots: [ ]
+
+# GUI Configuration for the Tiers GUI (/battlepass tiers)
+tiers-gui:
+  title: "xBattlepass: Tiers"
+  mask:
+    # The way the mask works is by having a list of materials
+    # And then a pattern to use those materials.
+
+    # The pattern is the rows in the GUI
+    # Each line must be 9 long, and the amount of rows should be the amount of rows in the GUI
+    # A zero represents nothing
+    # A 1 represents the first material
+    # A 2 represents the second material
+    # And so on, you can add up to 9.
+    materials:
+      - black_stained_glass_pane
+    pattern:
+      - "111111111"
+      - "111111111"
+      - "111111111"
+      - "111111111"
+      - "111111111"
+      - "111111111"
+    progression-pattern:
+      # To set the order of the pattern,
+      # Use 1-9 and then a-z: a goes after 9.
+      - "109ab0jkl"
+      - "2080c0i0m"
+      - "3070d0h0n"
+      - "4560efg0o"
+      - "00000000p"
+      - "00000000q"
+
+  buttons:
+    # The amount of the item as a function of the level
+    item-amount: "%level%"
+    # For example, increasing every 10 levels would be "ceil((%level% + 1) / 10)"
+    # The value is always rounded down.
+
+    prev-page:
+      material: arrow
+      name: "&fPrevious Page"
+      location:
+        row: 6
+        column: 4
+
+    next-page:
+      material: arrow
+      name: "&fNext Page"
+      location:
+        row: 6
+        column: 6
+
+    close:
+      material: barrier
+      name: "&cClose"
+      location:
+        row: 6
+        column: 5
+
+    free-rewards-format: "&8»&r &9%reward%"
+    premium-rewards-format: "&8»&r &6%reward%"
+    empty-rewards-format: ""
+
+    unlocked:
+      item: lime_stained_glass_pane
+      name: "&aTier %tier_numeral%"
+      lore:
+        - "&7Rewards:"
+        - "%free-rewards%"
+        - "%premium-rewards%"
+        - ""
+        - "&aCLAIM"
+
+    in-progress:
+      item: yellow_stained_glass_pane
+      name: "&eTier %tier_numeral%"
+      lore:
+        - "&7Rewards:"
+        - "%free-rewards%"
+        - "%premium-rewards%"
+        - ""
+        - "&fProgress:"
+        - "&8» &e%percentage_progress%%"
+        - "&8» &e%current_bp_xp%&8/&7%required_bp_xp% &fXP"
+
+    locked:
+      item: red_stained_glass_pane
+      name: "&cTier %tier_numeral%"
+      lore:
+        - "&7Rewards:"
+        - "%free-rewards%"
+        - "%premium-rewards%"
+        - ""
+        - "&cLOCKED"
+
+    claimed:
+      item: green_stained_glass_pane glint
+      name: "&aTier %tier_numeral%"
+      lore:
+        - "&7Rewards:"
+        - "%free-rewards%"
+        - "%premium-rewards%"
+        - ""
+        - "&aCLAIMED"
+
+    # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
+    custom-slots: [ ]
+
+# GUI Configuration for the Categories GUI (/battlepass quests)
+categories-gui:
+  title: "&8Categories: %page%"
+  mask:
+    # The way the mask works is by having a list of materials
+    # And then a pattern to use those materials.
+
+    # The pattern is the rows in the GUI
+    # Each line must be 9 long, and the amount of rows should be the amount of rows in the GUI
+    # A zero represents nothing
+    # A 1 represents the first material
+    # A 2 represents the second material
+    # And so on, you can add up to 9.
+    materials:
+      - black_stained_glass_pane
+    pattern:
+      # For this GUI, "c" represents a slot for a category.
+      # Categories are sorted in the order they are in the categories.yml file.
+      - "111111111"
+      - "1c1c1c1c1"
+      - "1111c1111"
+      - "111111111"
+      - "111111111"
+  next-page:
+    item:
+      active: orange_stained_glass_pane name:"&aNext page"
+      inactive: gray_stained_glass_pane
+    lore:
+      active: [ ]
+      inactive: [ ]
+    row: 5
+    column: 6
+  prev-page:
+    item:
+      active: orange_stained_glass_pane name:"&aPrevious page"
+      inactive: gray_stained_glass_pane
+    lore:
+      active: [ ]
+      inactive: [ ]
+    row: 5
+    column: 4
+
+  # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
+  custom-slots: [ ]
+
+# GUI Configuration for the Quests GUI
+quests-gui:
+  title: "%category%: %page%"
+  mask:
+    # The way the mask works is by having a list of materials
+    # And then a pattern to use those materials.
+
+    # The pattern is the rows in the GUI
+    # Each line must be 9 long, and the amount of rows should be the amount of rows in the GUI
+    # A zero represents nothing
+    # A 1 represents the first material
+    # A 2 represents the second material
+    # And so on, you can add up to 9.
+    materials:
+      - black_stained_glass_pane name:" "
+    pattern:
+      # For this GUI, "q" represents a slot for a quest.
+      # Quests are sorted in the order they are in the categories.yml file.
+      - "111111111"
+      - "1q1q1q1q1"
+      - "11q1q1q11"
+      - "111111111"
+      - "111111111"
+  next-page:
+    item:
+      active: orange_stained_glass_pane name:"&aNext page"
+      inactive: black_stained_glass_pane name:" "
+    lore:
+      active: [ ]
+      inactive: [ ]
+    row: 5
+    column: 6
+  prev-page:
+    item:
+      active: orange_stained_glass_pane name:"&aPrevious page"
+      inactive: black_stained_glass_pane name:" "
+    lore:
+      active: [ ]
+      inactive: [ ]
+    row: 5
+    column: 4
+
+  # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
+  custom-slots: [ ]
+
+# GUI Configuration for the Quest Icon
+quests-icon:
+  timer-format:
+    start: "Starts in %time%"
+    end: "Ends in %time%"
+    reset: "Resets in %time%"
+    none: "One-Time quest (does not end or reset)"
+  tasks-format:
+    - "&a%task_name%"
+    - " %task_lore%"
+  tasks-separator: []
+  name: "&6%quest_name%" # The name of the quest
+  lore:
+    - "&7%quest_description%" # This shows the description of the quest
+    - ""
+    - "&a%quest_tasks%" # This shows the tasks and their progress
+    - ""
+    - "&7%quest_tier%" # Premium or Both
+    - "&7%quest_timer%" # This shows either: When it unlocks, when it started, or the time until it resets.
+
+time-format:
+  split: " "
+  days: "&6%value%&fd"
+  hours: "&6%value%&fh"
+  minutes: "&6%value%&fm"
+  seconds: "&6%value%&fs"
+
+# Date format patterns (case-sensitive):
+# d = day, M = month, y = year, H = hour (0-23), m = minute, s = second
+# Example: "dd/MM/yyyy HH:mm:ss" → 31/05/2025 14:07:30
+date-format: "yyyy-MM-dd HH:mm"
+
+sound:
+  tier-up:
+    enabled: true # Whether the sound is enabled
+    sound: block.anvil.use # The sound to play
+    volume: 1 # The volume of the sound
+    pitch: 1 # The pitch of the sound
+  reward-claim:
+    enabled: true
+    sound: block.anvil.use
+    volume: 1
+    pitch: 1
+  quest-complete:
+    enabled: true
+    sound: block.anvil.use
+    volume: 1
+    pitch: 1
+```
