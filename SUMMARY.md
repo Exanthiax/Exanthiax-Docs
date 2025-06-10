@@ -50,3 +50,4 @@
   * [📋 1.0.4](changelogs/versions/1.0.4.md)
   * [📋 1.0.5](changelogs/versions/1.0.5.md)
   * [📋 1.1.0](changelogs/versions/1.1.0.md)
+  * [📋 1.1.1](changelogs/versions/1.1.1.md)

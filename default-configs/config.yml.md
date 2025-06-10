@@ -308,4 +308,9 @@ sound:
     sound: block.anvil.use
     volume: 1
     pitch: 1
+  gui-click-sound:
+    enabled: true
+    sound: ui_button_click
+    volume: 1
+    pitch: 1
 ```
