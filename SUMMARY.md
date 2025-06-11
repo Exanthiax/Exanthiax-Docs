@@ -52,3 +52,9 @@
   * [📋 1.1.0](changelogs/versions/1.1.0.md)
   * [📋 1.1.1](changelogs/versions/1.1.1.md)
   * [📋 1.1.2](changelogs/versions/1.1.2.md)
+
+## Group 1
+
+* [Links](group-1/links/README.md)
+  * [Discord](https://discord.com/invite/H2ZjD9G2)
+  * [Donate](https://www.paypal.com/donate/?hosted_button_id=QVYTGVWWSZRRY)
