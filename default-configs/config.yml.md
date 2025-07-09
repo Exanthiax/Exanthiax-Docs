@@ -33,6 +33,7 @@ battlepass-gui:
       - "111111111"
       - "111010111"
       - "111111111"
+
   buttons:
     tiers:
       item: lime_stained_glass_pane
@@ -46,6 +47,7 @@ battlepass-gui:
       location:
         row: 2
         column: 4
+
     quests:
       item: orange_stained_glass_pane
       name: "&6Quests"
@@ -58,6 +60,14 @@ battlepass-gui:
       location:
         row: 2
         column: 6
+
+    close:
+      enabled: true
+      material: barrier
+      name: "&cClose"
+      location:
+        row: 3
+        column: 5
 
     # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
     custom-slots: [ ]
@@ -101,20 +111,21 @@ tiers-gui:
     # The value is always rounded down.
 
     prev-page:
-      material: arrow
-      name: "&fPrevious Page"
+      material: orange_stained_glass_pane
+      name: "&aPrevious page"
       location:
         row: 6
         column: 4
 
     next-page:
-      material: arrow
-      name: "&fNext Page"
+      material: orange_stained_glass_pane
+      name: "&aNext Page"
       location:
         row: 6
         column: 6
 
     close:
+      enabled: true
       material: barrier
       name: "&cClose"
       location:
@@ -124,6 +135,21 @@ tiers-gui:
     free-rewards-format: "&8»&r &9%reward%"
     premium-rewards-format: "&8»&r &6%reward%"
     empty-rewards-format: ""
+
+    # Available Placeholders:
+    # %pass% - The name of the battlepass
+    # %claimable_tiers% - The amount of tiers that can be claimed
+    # %percentage_progress% - The percentage of the tier XP progress
+    # %current_bp_xp% - The current battlepass XP
+    # %current_bp_xp_formatted% - The current battlepass XP formatted with commas
+    # %required_bp_xp% - The required battlepass XP for the next tier
+    # %required_bp_xp_formatted% - The required battlepass XP formatted with commas
+    # %tier% - The tier number
+    # %tier_numeral% - The tier number in Roman numerals (I, II, III, IV, V, VI, VII, VIII, IX, X)
+    # %tier_x% - The tier number with an offset (e.g. if %tier% = 5, then %tier_2% = 7, %tier_-2% = 3)
+    # %tier_x_numeral% - The tier number in Roman numerals with an offset (e.g. if %tier_numeral% = V, then %tier_2_numeral% = VII, %tier_-2_numeral% = III)
+    # %free-rewards% - The free rewards for the tier
+    # %premium-rewards% - The premium rewards for the tier
 
     unlocked:
       item: lime_stained_glass_pane
@@ -193,31 +219,39 @@ categories-gui:
       - "1111c1111"
       - "111111111"
       - "111111111"
-  next-page:
-    item:
-      active: orange_stained_glass_pane name:"&aNext page"
-      inactive: gray_stained_glass_pane
-    lore:
-      active: [ ]
-      inactive: [ ]
-    row: 5
-    column: 6
-  prev-page:
-    item:
-      active: orange_stained_glass_pane name:"&aPrevious page"
-      inactive: gray_stained_glass_pane
-    lore:
-      active: [ ]
-      inactive: [ ]
-    row: 5
-    column: 4
 
-  # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
-  custom-slots: [ ]
+  buttons:
+    next-page:
+      item:
+        active: orange_stained_glass_pane name:"&aNext page"
+        inactive: gray_stained_glass_pane
+      lore:
+        active: [ ]
+        inactive: [ ]
+      row: 5
+      column: 6
+    prev-page:
+      item:
+        active: orange_stained_glass_pane name:"&aPrevious page"
+        inactive: gray_stained_glass_pane
+      lore:
+        active: [ ]
+        inactive: [ ]
+      row: 5
+      column: 4
+    close:
+      enabled: true
+      material: barrier
+      name: "&cClose"
+      row: 5
+      column: 5
+
+    # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
+    custom-slots: [ ]
 
 # GUI Configuration for the Quests GUI
 quests-gui:
-  title: "%category%: %page%"
+  title: "&8%category%: %page%"
   mask:
     # The way the mask works is by having a list of materials
     # And then a pattern to use those materials.
@@ -238,27 +272,35 @@ quests-gui:
       - "11q1q1q11"
       - "111111111"
       - "111111111"
-  next-page:
-    item:
-      active: orange_stained_glass_pane name:"&aNext page"
-      inactive: black_stained_glass_pane name:" "
-    lore:
-      active: [ ]
-      inactive: [ ]
-    row: 5
-    column: 6
-  prev-page:
-    item:
-      active: orange_stained_glass_pane name:"&aPrevious page"
-      inactive: black_stained_glass_pane name:" "
-    lore:
-      active: [ ]
-      inactive: [ ]
-    row: 5
-    column: 4
 
-  # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
-  custom-slots: [ ]
+  buttons:
+    next-page:
+      item:
+        active: orange_stained_glass_pane name:"&aNext page"
+        inactive: black_stained_glass_pane name:" "
+      lore:
+        active: [ ]
+        inactive: [ ]
+      row: 5
+      column: 6
+    prev-page:
+      item:
+        active: orange_stained_glass_pane name:"&aPrevious page"
+        inactive: black_stained_glass_pane name:" "
+      lore:
+        active: [ ]
+        inactive: [ ]
+      row: 5
+      column: 4
+    close:
+      enabled: true
+      material: barrier
+      name: "&cClose"
+      row: 5
+      column: 5
+
+    # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
+    custom-slots: [ ]
 
 # GUI Configuration for the Quest Icon
 quests-icon:
