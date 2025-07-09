@@ -88,7 +88,6 @@ tiers:
 
 ## Internal Placeholders
 
-| Placeholder       | Value                                             |
-| ----------------- | ------------------------------------------------- |
-| `%level%`         | The battlepass tier/level. Useful for XP scaling. |
-| `%level_numeral%` | The battlepass tier/level, in numerals            |
+| Placeholder | Value                                             |
+| ----------- | ------------------------------------------------- |
+| `%level%`   | The battlepass tier/level. Useful for XP scaling. |
