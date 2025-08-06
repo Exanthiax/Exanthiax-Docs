@@ -55,6 +55,7 @@
   * [📋 1.1.3](changelogs/versions/1.1.3.md)
   * [📋 1.1.4](changelogs/versions/1.1.4.md)
   * [📋 1.1.5](changelogs/versions/1.1.5.md)
+  * [📋 1.1.6](changelogs/versions/1.1.6.md)
 
 ## Links
 
