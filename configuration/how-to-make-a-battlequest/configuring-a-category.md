@@ -18,8 +18,8 @@ Categories allow both Free and Premium quests
 name: "&8»&e Daily Challenges"
 item: nether_star 1
 lore:
-  - "&a%completed%/%total% Complete"
-  - "&7%time%"
+  - "&a%completed%/%total% Complete"
+  - "&7%time%"
 
 battlepass: battlepass
 priority: 0
@@ -34,9 +34,9 @@ timer-format:
   none: "One-Time quest (does not end or reset)"
 
 quests:
-  - id: free_daily_quest_1
-  - id: free_daily_quest_2
-  - id: free_daily_quest_3
+  - id: free_daily_quest_1
+  - id: free_daily_quest_2
+  - id: free_daily_quest_3
 ```
 
 ### Understanding the Sections
@@ -48,8 +48,8 @@ quests:
 name: "&8»&e Daily Challenges"
 item: nether_star 1
 lore:
-  - "&a%completed%/%total% Complete"
-  - "%xbattlepass_category_daily_duration%"
+  - "&a%completed%/%total% Complete"
+  - "%xbattlepass_category_daily_duration%"
 ```
 #### The Config Section:
 
@@ -82,9 +82,9 @@ timer-format:
 # The list of Quest ID(s) to be completed.
 # The order of this list is what determines the order within the Category GUI.
 quests:
-  - id: free_daily_quest_1
-  - id: free_daily_quest_2
-  - id: free_daily_quest_3
+  - id: free_daily_quest_1
+  - id: free_daily_quest_2
+  - id: free_daily_quest_3
 ```
 
 #### Internal Placeholders

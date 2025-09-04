@@ -40,10 +40,14 @@ battlepass-gui:
       name: "&aTiers"
       lore:
         - ""
-        - "&aLeft click &7to see"
-        - "&7your battlepass progression"
+        - "&aLeft click &7to see your"
+        - "&7battlepass progression"
         - "&7and claim rewards"
         - ""
+        - "&7Tier: &a%tier%"
+        - "&7XP: &a%current_bp_xp%&8/&a%required_bp_xp%"
+        - "&7Progress: &a%percentage_progress%%"
+        - "&7Claimable Tiers: &a%claimable_tiers%"
       location:
         row: 2
         column: 4
@@ -132,13 +136,20 @@ tiers-gui:
         row: 6
         column: 5
 
+    empty-rewards-format: "&8&oNo rewards for this tier!"
     free-rewards-format: "&8»&r &9%reward%"
     premium-rewards-format: "&8»&r &6%reward%"
-    empty-rewards-format: ""
+    missing-premium-rewards-format: "&c&l✘ &6%reward%"
+    claimed-free-rewards-format: "&a&l✔ &9%reward%"
+    claimed-premium-rewards-format: "&a&l✔ &6%reward%"
 
     # Available Placeholders:
     # %pass% - The name of the battlepass
     # %claimable_tiers% - The amount of tiers that can be claimed
+    # %max_tiers% - The total amount of tiers in the battlepass
+    # %pass_type% - The type of battlepass (Free, Premium)
+    # %start_date% - The start date of the battlepass
+    # %end_date% - The end date of the battlepass
     # %percentage_progress% - The percentage of the tier XP progress
     # %current_bp_xp% - The current battlepass XP
     # %current_bp_xp_formatted% - The current battlepass XP formatted with commas
@@ -150,46 +161,87 @@ tiers-gui:
     # %tier_x_numeral% - The tier number in Roman numerals with an offset (e.g. if %tier_numeral% = V, then %tier_2_numeral% = VII, %tier_-2_numeral% = III)
     # %free-rewards% - The free rewards for the tier
     # %premium-rewards% - The premium rewards for the tier
+    # %claimed-free-rewards% - The claimed free rewards for the tier
+    # %claimed-premium-rewards% - The claimed premium rewards for the tier
 
+    # The different states a tier can be in
+    # When only the free rewards are claimable.
+    unlocked-free:
+      item: lime_stained_glass_pane
+      name: "&aTier %tier_numeral%"
+      lore:
+        - "&7Rewards:"
+        - "&7Free Tier:"
+        - "%free-rewards%"
+        - "&7Premium Tier:"
+        - "%premium-rewards%"
+        - ""
+        - "&aCLAIM"
+
+    # When both the free and premium rewards are claimable.
     unlocked:
       item: lime_stained_glass_pane
       name: "&aTier %tier_numeral%"
       lore:
         - "&7Rewards:"
+        - "&7Free Tier:"
         - "%free-rewards%"
+        - "&7Premium Tier:"
         - "%premium-rewards%"
         - ""
         - "&aCLAIM"
 
+    # When the free rewards have been claimed, but the premium rewards are not claimable due to missing premium.
+    premium-required:
+      item: orange_stained_glass_pane
+      name: "&aTier %tier_numeral%"
+      lore:
+        - "&7Rewards:"
+        - "&7Free Tier:"
+        - "%claimed-free-rewards%"
+        - "&7Premium Tier:"
+        - "%premium-rewards%"
+        - ""
+        - "&6PURCHASE THE BATTLEPASS TO CLAIM PREMIUM REWARDS"
+
+    # When the tier is not claimable yet, but is the next tier to be claimed.
     in-progress:
       item: yellow_stained_glass_pane
       name: "&eTier %tier_numeral%"
       lore:
         - "&7Rewards:"
+        - "&7Free Tier:"
         - "%free-rewards%"
+        - "&7Premium Tier:"
         - "%premium-rewards%"
         - ""
         - "&fProgress:"
         - "&8» &e%percentage_progress%%"
         - "&8» &e%current_bp_xp%&8/&7%required_bp_xp% &fXP"
 
+    # When the tier is not claimable yet, and is not the next tier to be claimed.
     locked:
       item: red_stained_glass_pane
       name: "&cTier %tier_numeral%"
       lore:
         - "&7Rewards:"
+        - "&7Free Tier:"
         - "%free-rewards%"
+        - "&7Premium Tier:"
         - "%premium-rewards%"
         - ""
         - "&cLOCKED"
 
+    # When all rewards have been claimed.
     claimed:
       item: green_stained_glass_pane glint
       name: "&aTier %tier_numeral%"
       lore:
         - "&7Rewards:"
-        - "%free-rewards%"
-        - "%premium-rewards%"
+        - "&7Free Tier:"
+        - "%claimed-free-rewards%"
+        - "&7Premium Tier:"
+        - "%claimed-premium-rewards%"
         - ""
         - "&aCLAIMED"
 

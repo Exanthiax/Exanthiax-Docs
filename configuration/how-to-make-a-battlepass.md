@@ -48,21 +48,21 @@ name: "&6Example Battlepass" # The name of the battlepass, to dsiplay in GUIs.
 battlepass:
   # The formula to calculate the XP needed to reach the next tier.
   # You can use %level% here to create xp scaling.
-  xp-formula: "1.5 * %level% + 5"
-  
-  # The maximum tier of the BattlePass.
-  max-tier: 100
-  
-  # The command used to open the BattlePass GUI.
-  command: "battlepass"
+  xp-formula: "1.5 * %level% + 5"
+   
+  # The maximum tier of the BattlePass.
+  max-tier: 100
+   
+   # The command used to open the BattlePass GUI.
+  command: "battlepass"
 
   # The permission required for the premium pass
   premium-permission: "example.pass.premium"
 
-  # The date and time the BattlePass starts. Format: YYYY-MM-DD HH:MM
-  # This uses the server time.
-  battlepass-start: 2025-01-01 00:00
-  
+  # The date and time the BattlePass starts. Format: YYYY-MM-DD HH:MM
+  # This uses the server time.
+  battlepass-start: 2025-01-01 00:00
+   
   # The date the battle pass ends. Format: YYYY-MM-DD HH:MM
   # This uses the server time.
   battlepass-end: 2025-05-01 00:00
@@ -72,18 +72,19 @@ battlepass:
 
 ```yaml
 tiers:
-	# The tier number for the reward(s).
-	# Don't include the tier if you don't want a reward.
-  - tier: 1
-    rewards:
-	    # The ID of the reward, see more here:
-      - id: diamond_block
-	    # The tier the reward is in.
-	    # "Premium" means only Premium players, "Free" allows anyone to claim
-        tier: free
-        # List all the rewards in the same format.
-      - id: money_1000
-        tier: premium
+  # The tier number for the reward(s).
+  # Don't include the tier if you don't want a reward.
+  - tier: 1
+    rewards:
+      # The ID of the reward, see more here:
+      - id: diamond_block
+      # The tier the reward is in.
+      # "Premium" means only Premium players, "Free" allows anyone to claim
+        tier: free
+        
+      # List all the rewards in the same format.
+      - id: money_1000
+        tier: premium
 ```
 
 ## Internal Placeholders
