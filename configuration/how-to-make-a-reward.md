@@ -3,12 +3,14 @@
 Rewards are what the players earn for tiering up the battlepass. Without rewards, what would be the point? Thanks to libreforge, rewards don't have to just be some XP, some currency, an item. They can be Potion Effects, stat multipliers, and much more. Rewards are really easy to setup, and they are totally reusable.
 
 ## Default configs
+
 The default configs can be found here.
 
 ## How to add rewards
+
 Each skill is its own config file, placed in the `/rewards/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-The ID of the Reward is the file name. This is what you use in your battlepass configs, and effect filters.
+The ID of the Reward is the file name. This is what you use in your battlepass configs, and effect filters.\
 ID's must be lowercase letters, numbers, and underscores only.
 
 ## Example Reward Config
@@ -29,6 +31,7 @@ effects:
 ## Understanding the Sections
 
 #### The Display Options
+
 ```yaml
 # This is what is shown in the BattlePass GUI on the tier.
 display:
@@ -39,6 +42,7 @@ display:
 ```
 
 If you do not want to have any lore, you can simply blank it out.
+
 ```yaml
 display:
   name: "&6x&b1 &fDiamond Block"
@@ -46,6 +50,7 @@ display:
 ```
 
 #### The Effects Section
+
 ```yaml
 # Effects are part of libreforge, you can read more below.
 effects:
@@ -60,7 +65,7 @@ Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
-##### Other Examples:
+**Other Examples:**
 
 ```yml
 effects:
@@ -73,6 +78,7 @@ effects:
       conditions: []
       duration: 36000
 ```
+
 This example grants the player a 25% Movement Speed Bonus for 30 Minutes.
 
 ```yaml
@@ -81,6 +87,7 @@ effects:
     args:
       command: '/envoy flare default %player% 2'
 ```
+
 This example runs a command from an external plugin, in this case, giving the player 2 Envoy Flares from AxEnvoy.
 
 ```yaml
@@ -90,4 +97,5 @@ effects:
       amount: 100
       skill: mining
 ```
+
 This example gives 100 Skill XP for the EcoSkills Mining skill.
