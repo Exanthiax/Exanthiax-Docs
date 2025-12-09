@@ -4,21 +4,17 @@ description: Default lang.yml
 
 # lang.yml
 
-
-
-```yaml
+```yml
 messages:
+  # General
   prefix: "<gradient:#00ff87>xBattlepass</gradient:#60efff> &8>> "
   reloaded: "&7xBattlepass has been reloaded."
-  tier-up: "&7You have tiered up to &a%tier%&7."
-  quest-complete: "&7You have completed quest &a%quest%&7."
-  reward-claim: "&7You have received reward &a%reward%&7."
-  premium-give: "&7You have unlocked the premium Battlepass."
-  premium-broadcast: "&a%player% &7has unlocked the premium Battlepass."
-  already-premium: "&7This player already has the premium Battlepass."
+  invalid-command: "&cUnknown subcommand!"
   no-permission: "&cYou don't have permission to do this!"
   not-player: "&cThis command must be run by a player"
-  invalid-command: "&cUnknown subcommand!"
+  reset-player: "&7Successfully reset battlepass &r%pass% &7data for player &6%playername%&7."
+  reset-task: "&7Successfully reset task '&e%task%&7' in &r%pass% &7for &6%playername%&7."
+  # Command input errors
   player-required: "&cYou must specify a player!"
   player-not-found: "&cPlayer not found!"
   pass-required: "&cYou must specify a battlepass!"
@@ -27,11 +23,32 @@ messages:
   invalid-type: "&cGive type not found!"
   amount-required: "&cYou must specify an amount!"
   invalid-amount: "&cInvalid amount!"
-  reset-player: "&7Successfully reset battlepass &r%pass% &7data for player &6%playername%&7."
+  category-required: "&cYou must specify a category!"
+  invalid-category: "&cInvalid category!"
+  quest-required: "&cYou must specify a quest!"
+  invalid-quest: "&cInvalid quest!"
+  task-required: "&cYou must specify a task!"
+  invalid-task: "&cInvalid task!"
+  # Tier and quest messages
+  tier-up: "&7You have tiered up to &a%tier%&7."
+  quest-complete: "&7You have completed quest &a%quest%&7."
+  completed-task: "&7Successfully completed task '&e%task%&7' in &r%pass% &7for &6%playername%&7."
+  reward-claim: "&7You have received reward &a%reward%&7."
+  premium-required: "&cYou need to have the premium &6%pass% &cto claim &a%reward%&c!"
+  given-task-progress: "&7Successfully given &b%amount%&7 task progress for &e%task%&7 in &r%pass% &7to &6%playername%&7."
+  received-task-progress: "&7You received &b%amount%&7 task progress for &e%task%&7 in &r%pass%&7."
   given-experience: "&7Successfully given &b%amount%&7 &r%pass% &7experience to &6%playername%&7."
-  given-tiers: "&7Successfully given &b%amount%&7 &r%pass% &7tier(s) to &6%playername%&7."
   received-experience: "&7You have received &b%amount%&7 &r%pass% &7experience."
+  given-tiers: "&7Successfully given &b%amount%&7 &r%pass% &7tier(s) to &6%playername%&7."
   received-tiers: "&7You have received &b%amount%&7 &r%pass% &7tier(s)."
+  # Premium management
+  premium-given: "&7Successfully given premium &6%pass% &7to player &6%playername%&7."
+  premium-removed: "&7Successfully removed premium &6%pass% &7from player &6%playername%&7."
+  already-premium: "&cPlayer &6%playername% &calready has premium &6%pass%&c!"
+  not-premium: "&cPlayer &6%playername% &cdoes not have premium &6%pass%&c!"
+  premium-unlocked: "&7You have unlocked premium &6%pass%&7!"
+  premium-revoked: "&7Your premium &6%pass% &7has been revoked."
+  premium-broadcast: "&b%playername% &7has unlocked premium &6%pass%&7!"
 
 pass-type:
   free: "&9Free"
@@ -41,6 +58,6 @@ infinity: "∞"
 never: "&6never"
 free: "&aFree"
 premium: "&6Premium"
-category-expired: "&cCategory Expired" # This message is used when a category is no longer available
-category-in-progress: "&aCategory Unlocked" # This message is used when a category is unlocked/started
+category-expired: "&cCategory Expired"
+category-in-progress: "&aCategory Unlocked"
 ```

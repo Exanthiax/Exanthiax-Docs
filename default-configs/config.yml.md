@@ -4,7 +4,7 @@ description: Default config.yml
 
 # config.yml
 
-```yaml
+```yml
 #
 # xBattlepass Configuration
 # by Exanthiax, _OfTeN_, Auxilor
@@ -395,6 +395,21 @@ sound:
   reward-claim:
     enabled: true
     sound: block.anvil.use
+    volume: 1
+    pitch: 1
+  reward-locked:
+    enabled: true
+    sound: entity.villager.no
+    volume: 1
+    pitch: 1
+  premium-required:
+    enabled: true
+    sound: entity.villager.no
+    volume: 1
+    pitch: 1
+  premium-unlocked:
+    enabled: true
+    sound: ui_toast_challenge_complete
     volume: 1
     pitch: 1
   quest-complete:
