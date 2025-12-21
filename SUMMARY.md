@@ -61,6 +61,7 @@
   * [📋 1.3.0](changelogs/versions/1.3.0.md)
   * [📋 1.4.0](changelogs/versions/1.4.0.md)
   * [📋 1.5.0](changelogs/versions/1.5.0.md)
+  * [📋 1.6.0](changelogs/versions/1.6.0.md)
 
 ## Links
 
